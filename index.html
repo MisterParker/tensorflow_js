@@ -4,6 +4,7 @@
         <!-- loading the laters version of TensorFlow here -->
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
     </head>
     <body>
         <h3>Static Image</h3>
@@ -15,6 +16,13 @@
         <div id="console" style="color:red;font-size:1.5em;background-color: burlywood;"></div>
         <!-- add webcam feed in to do prediction -->
         <video autoplay playinline muted id="webcam" width="224" height="224"></video> 
+
+        <hr><br>
+        <h3>Custom Classifier</h3>
+        <!-- creating a custom classifier - the buttons will be used to add training images -->
+        <button id="class-a">Add A</button><br><br>
+        <button id="class-b">Add B</button><br><br>
+        <button id="class-c">Add C</button><br><br>
 
         <!-- Load index.js after the content of the page -->
         <script src="index.js"></script>
